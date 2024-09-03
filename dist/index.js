@@ -1,11 +1,11 @@
 "use strict";
-const Name = "John Doe";
+const Name = "Dayan Berrio";
 const Gato = "";
 console.log(Name);
-if (Name == "John Doe") {
+if (Name == "Dayan Berrio") {
     console.log(Name);
 }
-let array = ["John", "Doe", "Jane", "Doe"];
+let array = ["Dayan", "Berrio", "kathe", "pavas"];
 for (let i = 0; i < array.length; i++) {
     console.log(array[i]);
 }
@@ -25,6 +25,7 @@ let x = function (b) {
 function w() {
     return "";
 }
+// Hacer un Objeto y le tenemos que aplicar las normas , elementos privados , publicos , estaticos y caracteristicas de un objeto , polimorfismo , herencia , abstraccion y encapsulamiento.
 class Estudiante {
     constructor(name) {
         this.name = name;
@@ -39,7 +40,7 @@ class Estudiante {
 }
 class Notas extends Estudiante {
     constructor(nota) {
-        super("Camilo");
+        super("vale");
         this.nota = nota;
     }
     set() {
@@ -56,13 +57,13 @@ class po extends mr {
 }
 class Carniceria {
 }
-class Pollo extends Carniceria {
+class Rata extends Carniceria {
     constructor(nombre, peso) {
         super();
         this.nombre = nombre;
         this.peso = peso;
-        Pollo.cantidad++;
-        Pollo.info_pollo = "Nombre Pollo: " + this.nombre + " Peso del Pollo: " + this.peso + " Cantidad de Pollos: " + Pollo.cantidad;
+        Rata.cantidad++;
+        Rata.info_rata = "Nombre Rata: " + this.nombre + " Peso de la rata: " + this.peso + " Cantidad de ratas: " + Rata.cantidad;
     }
     getNombre() {
         return this.nombre;
@@ -71,21 +72,21 @@ class Pollo extends Carniceria {
         this.nombre = nombre;
     }
     static getCantidad() {
-        return Pollo.cantidad;
+        return Rata.cantidad;
     }
     static setCantidad(cantidad) {
-        Pollo.cantidad = cantidad;
+        Rata.cantidad = cantidad;
     }
     hacerSonido() {
-        console.log("Pio Pio");
+        console.log("squirt squirt");
     }
 }
-Pollo.cantidad = 0;
-Pollo.info_pollo = "";
-const pollo1 = new Pollo("Pollo_Uno", 2);
-console.log(pollo1.getNombre());
-pollo1.setNombre("Cristian");
-console.log(pollo1.getNombre());
-console.log(Pollo.getCantidad());
-console.log(Pollo.info_pollo);
-pollo1.hacerSonido();
+Rata.cantidad = 0;
+Rata.info_rata = "";
+const rata1 = new Rata("Rata_Uno", 2);
+console.log(rata1.getNombre());
+rata1.setNombre("Dayan");
+console.log(rata1.getNombre());
+console.log(Rata.getCantidad());
+console.log(Rata.info_rata);
+rata1.hacerSonido();

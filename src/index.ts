@@ -1,13 +1,13 @@
 
-const Name: String = "John Doe";
+const Name: String = "Dayan Berrio";
 const Gato: String = "";
 console.log(Name);
 
-if (Name == "John Doe") {
+if (Name == "Dayan Berrio") {
     console.log(Name);
 }
 
-let array: String[] = ["John", "Doe", "Jane", "Doe"];
+let array: String[] = ["Dayan", "Berrio", "kathe", "pavas"];
 
 for (let i = 0; i < array.length; i++) {
     console.log(array[i]);
@@ -40,7 +40,7 @@ interface Personas {
     };
     info: Function;
 }
-
+// Hacer un Objeto y le tenemos que aplicar las normas , elementos privados , publicos , estaticos y caracteristicas de un objeto , polimorfismo , herencia , abstraccion y encapsulamiento.
 class Estudiante {
 
     name: String;
@@ -64,7 +64,7 @@ class Estudiante {
 class Notas extends Estudiante {
     nota: Number | null;
     constructor(nota: Number) {
-        super("Camilo");
+        super("vale");
         this.nota = nota;
     }
 
@@ -87,17 +87,17 @@ class po extends mr {
 abstract class Carniceria {
     abstract hacerSonido(): void;
 }
-class Pollo extends Carniceria {
+class Rata extends Carniceria {
     private nombre: string;
     public peso: number;
     static cantidad: number = 0;
-    static info_pollo: string = "";
+    static info_rata: string = "";
     constructor(nombre: string, peso: number) {
         super();
         this.nombre = nombre;
         this.peso = peso;
-        Pollo.cantidad++;
-        Pollo.info_pollo = "Nombre Pollo: " + this.nombre + " Peso del Pollo: " + this.peso + " Cantidad de Pollos: " + Pollo.cantidad;
+        Rata.cantidad++;
+        Rata.info_rata = "Nombre Rata: " + this.nombre + " Peso de la rata: " + this.peso + " Cantidad de ratas: " + Rata.cantidad;
     }
     public getNombre(): string {
         return this.nombre;
@@ -106,21 +106,22 @@ class Pollo extends Carniceria {
         this.nombre = nombre;
     }
     public static getCantidad(): number {
-        return Pollo.cantidad;
+        return Rata.cantidad;
     }
     public static setCantidad(cantidad: number): void {
-        Pollo.cantidad = cantidad;
+        Rata.cantidad = cantidad;
     }
     public hacerSonido(): void {
-        console.log("Pio Pio");
+        console.log("squirt squirt");
     }
 }
-const pollo1 = new Pollo("Pollo_Uno", 2);
-console.log(pollo1.getNombre());
-pollo1.setNombre("Cristian");
-console.log(pollo1.getNombre());
-console.log(Pollo.getCantidad());
-console.log(Pollo.info_pollo);
-pollo1.hacerSonido();
+const rata1 = new Rata("Rata_Uno", 2);
+console.log(rata1.getNombre());
+rata1.setNombre("Dayan");
+console.log(rata1.getNombre());
+console.log(Rata.getCantidad());
+console.log(Rata.info_rata);
+rata1.hacerSonido();
+
 
 
